@@ -28,3 +28,28 @@ To get started with this project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/AnnNaserNabil/imdb___analysis__Done.git
+
+2. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+3. Set up the environment variables by creating a .env file with your database and API key configurations:
+   ```bash
+   PGDATABASE=your_database_name
+   PGUSER=your_database_user
+   PGPASSWORD=your_database_password
+   PGHOST=your_database_host
+   PGPORT=your_database_port
+   TMDB_API_KEY=your_tmdb_api_key
+
+4. Run the ETL pipeline to populate the database:
+   ```bash
+   python app/pipeline.py
+
+5. Launch the Streamlit dashboard:
+
+   ```bash
+   streamlit run app/dashboard.py
+
+
+## Thank You
